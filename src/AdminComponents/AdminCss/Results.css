@@ -1,0 +1,59 @@
+
+.results-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters .css-2b097c-container {
+    width: 45%;
+  }
+  
+  .table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    border: 1px solid #ffffff;
+    text-align: left;
+    transition: background-color 0.3s;
+  }
+  
+  .table th {
+    background-color: #343a40;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .table th:hover {
+    background-color: #646464;
+  }
+  .table img {
+    max-width: 50px;
+    border-radius: 4px;
+  }
+  
+  .table tr:hover td {
+    background-color: #dee2e6;
+  }
+
+  
