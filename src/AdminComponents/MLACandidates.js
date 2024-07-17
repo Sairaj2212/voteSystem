@@ -21,7 +21,7 @@ const MLACandidates = () => {
 
   const fetchCandidates = async () => {
     try {
-      const response = await fetch('http://localhost/vote_server/mla/get_mla.php');
+      const response = await fetch('http://13.60.155.252/vote_server/mla/get_mla.php');
       if (!response.ok) throw new Error('Failed to fetch candidates');
       const data = await response.json();
       console.log('Fetched candidates:', data);
@@ -47,7 +47,7 @@ const MLACandidates = () => {
 
   const confirmDelete = async () => {
     try {
-      const response = await fetch('http://localhost/vote_server/mla/delete_mla.php', {
+      const response = await fetch('http://13.60.155.252/vote_server/mla/delete_mla.php', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: deleteCandidateId })
@@ -113,7 +113,7 @@ const MLACandidates = () => {
       formData.append('partySymbol', form.partySymbol);
       formData.append('image', form.image);
 
-      const response = await fetch('http://localhost/vote_server/mla/add_mla.php', {
+      const response = await fetch('http://13.60.155.252/vote_server/mla/add_mla.php', {
         method: 'POST',
         body: formData,
       });
@@ -152,7 +152,7 @@ const MLACandidates = () => {
       formData.append('partySymbol', form.partySymbol);
       formData.append('image', form.image);
 
-      const response = await fetch('http://localhost/vote_server/mla/update_mla.php', {
+      const response = await fetch('http://13.60.155.252/vote_server/mla/update_mla.php', {
         method: 'POST',
         body: formData,
       });
