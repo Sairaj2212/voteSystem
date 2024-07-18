@@ -21,7 +21,7 @@ const Login = () => {
     setMessage('');
 
     try {
-      const response = await fetch('http://localhost/vote_server/login.php', {
+      const response = await fetch('http://51.21.62.160/login.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

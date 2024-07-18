@@ -8,16 +8,17 @@ const Logout = () => {
     const [message, setMessage] = useState('');
     const [success, setSuccess] = useState(true);
     const navigate = useNavigate();
+    const logout = fetch('http://localhost/vote_server/logout.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
 
     useEffect(() => {
         const handleLogout = async () => {
             try {
-                const response = await fetch('http://localhost/vote_server/logout.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
+                const response = await logout;
 
                 const data = await response.json();
 

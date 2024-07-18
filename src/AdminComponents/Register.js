@@ -47,7 +47,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch('http://localhost/vote_server/register.php', {
+      const response = await fetch('https://localhost/vote_server/register.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -48,7 +48,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch('http://13.60.155.252/vote_server/register.php', {
+      const response = await fetch('http://51.21.62.160/register.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -23,7 +23,7 @@ const MPCandidates = () => {
 
   const fetchCandidates = async () => {
     try {
-      const response = await fetch('http://localhost/vote_server/mp/get_mp.php');
+      const response = await fetch('https://localhost/vote_server/mp/get_mp.php');
       if (!response.ok) throw new Error('Failed to fetch candidates');
       const data = await response.json();
       console.log('Fetched candidates:', data); // Debugging log
